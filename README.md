@@ -1,6 +1,17 @@
 author: val
+Modified by: Lingliang Zhang
 
 -slight modification to the jQuery.extend function
+
+-Alternate versions allow for either performing `$.merge`, or
+`\_.union` (from Underscore.js) on the conflicting arrays.
+
+-In the union version, when given two objects, attempts to merge them together
+into the first object, giving the second object priority to overwrite keys.
+When arrays are encountered, a union of the arrays will occur. 
+
+-Merge version requires only jQuery. Union version requires jQuery and Underscore.js
+
 
 -code copied directly out of 1.7.1 and slightly modified
 
