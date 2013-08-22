@@ -1,5 +1,5 @@
 (function(jQuery){
- jQuery.extendAndMerge = jQuery.fn.extendAndMerge = function() {
+ jQuery.extendAndUnion = jQuery.fn.extendAndUnion = function() {
 	var options, name, src, copy, copyIsArray, clone,
 		target = arguments[0] || {},
 		i = 1,
@@ -58,7 +58,7 @@
 						}
 					}else
 					// Never move original objects, clone them
-					target[ name ] = jQuery.extendAndMerge( deep, clone, copy );
+					target[ name ] = jQuery.extendAndUnion( deep, clone, copy );
 
 				// Don't bring in undefined values
 				} else if ( copy !== undefined ) {
