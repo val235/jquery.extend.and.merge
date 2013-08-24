@@ -36,5 +36,5 @@
 
 ###New way with union:
 
-	$.extendAndMerge(true, {}, {myObject:{myArray:[1,2,3]}}, {myObject:{myArray:[a,b,2,3]}} === produces ===> {myObject:{myArray:[1,2,3,a,b]}  
+	$.extendAndUnion(true, {}, {myObject:{myArray:[1,2,3]}}, {myObject:{myArray:[a,b,2,3]}} === produces ===> {myObject:{myArray:[1,2,3,a,b]}  
 
